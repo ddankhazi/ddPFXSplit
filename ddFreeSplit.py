@@ -240,9 +240,10 @@ class DDFreeSplitTool:
         cmds.setAttr(self.temp_plane + ".rotateY", 0)
         cmds.setAttr(self.temp_plane + ".rotateZ", 0)
         
-        # Set to bounding box display
+        # Set to bounding box display and hide
         cmds.setAttr(self.temp_plane + ".overrideEnabled", 1)
         cmds.setAttr(self.temp_plane + ".overrideDisplayType", 2)
+        cmds.setAttr(self.temp_plane + ".visibility", 0)
         
     def activate_paint_effects(self):
         """Activate Paint Effects with defaultPaint"""
