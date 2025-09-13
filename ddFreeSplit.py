@@ -137,7 +137,7 @@ class DDFreeSplitTool:
         cmds.frameLayout(label="Finish", collapsable=False, backgroundColor=[0.2, 0.2, 0.2])
         cmds.columnLayout(adjustableColumn=True)
         cmds.rowLayout(numberOfColumns=2, columnWidth2=(132, 132))
-        cmds.button(label="Finish & Cleanup", command=self.finish_and_cleanup, height=40, width=128, backgroundColor=[0.4, 0.4, 0.4])
+        cmds.button(label="Finish and Cleanup", command=self.finish_and_cleanup, height=40, width=128, backgroundColor=[0.4, 0.4, 0.4])
         cmds.button(label="Cancel", command=self.cancel_operation, height=40, width=128, backgroundColor=[0.2, 0.2, 0.2])
         cmds.setParent('..')
         cmds.setParent('..')
