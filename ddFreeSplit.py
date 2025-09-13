@@ -97,10 +97,10 @@ class DDFreeSplitTool:
         cmds.setParent('..')
         cmds.setParent('..')
         
-        # Step 3: Convert & Project (Orange)
-        cmds.frameLayout(label="Step 3: Convert & Project", collapsable=False, backgroundColor=[0.2, 0.2, 0.2])
+        # Step 3: Convert and Project
+        cmds.frameLayout(label="Step 3: Convert and Project", collapsable=False, backgroundColor=[0.2, 0.2, 0.2])
         cmds.columnLayout(adjustableColumn=True)
-        cmds.button(label="Convert & Project Curve", 
+        cmds.button(label="Convert and Project Curve(s)", 
                    command=self.convert_and_project, height=40, backgroundColor=[0.1, 0.4, 0.4])
         
         # Projection Settings
